@@ -1,0 +1,46 @@
+@use './abstract/var';
+@use './component/card';
+@use './component/section';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var.$font-roboto;
+}
+
+body {
+    background: var.$charcoal-grey;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.attribution { 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px; 
+    text-align: center; 
+    color: #000;
+    
+    a { 
+        color: var.$tomato; 
+    }
+}
+
+@media (min-width: 1024px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px){
+    .attribution { 
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+    }
+}
